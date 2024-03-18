@@ -83,7 +83,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <!-- Sidebar Menu -->
       <nav class="mt-2">
       <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-            <a href="#" class="nav-link active">
+            <a href="{{route('school')}}" class="nav-link active">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Dashboard
