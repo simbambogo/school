@@ -118,7 +118,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="{{route('studentdetails')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Details</p>
                 </a>
@@ -173,7 +173,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <!-- Main Footer -->
   <footer class="main-footer">
     <!-- Default to the left -->
-    <strong>Copyright &copy; 2014 <a href="#">CMS</a>.</strong> All rights reserved.
+    <strong>Copyright &copy; 2014 <a href="#">SCHOOL</a>.</strong> All rights reserved.
   </footer>
 </div>
 <!-- ./wrapper -->
