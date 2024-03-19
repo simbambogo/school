@@ -13,4 +13,8 @@ class SchoolController extends Controller
     public function studentdetails(){
         return view('school.studentdetails');
     }
+
+    public function studentform(){
+        return view('school.studentform');
+    }
 }

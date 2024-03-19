@@ -9,7 +9,7 @@
         <div class="card-header">
         <h3 class="card-title">Student Details</h3>
             <ol class="float-sm-right">
-              <a href="" class="btn btn-primary btn-block">Add</a>
+              <a href="{{route('studentform')}}" class="btn btn-primary btn-block">Add</a>
             </ol>
         </div>
         <!-- /.card-header -->
