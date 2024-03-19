@@ -7,7 +7,7 @@
     </section>
     <div class="card">
         <div class="card-header">
-        <h3 class="card-title">Student Details</h3>
+        <h3 class="card-title">Teacher Details</h3>
             <ol class="float-sm-right">
               <a href="{{route('studentform')}}" class="btn btn-primary btn-block">Add</a>
             </ol>
@@ -22,6 +22,7 @@
             <th>Platform(s)</th>
             <th>Engine version</th>
             <th>CSS grade</th>
+            <th>Action</th>
             </tr>
             </thead>
             <tbody>
@@ -33,6 +34,7 @@
             <td>Win 95+</td>
             <td> 4</td>
             <td>X</td>
+            <td><a href="#" class="btn btn-success"><i class="fa fa-edit"></i></a><a href="#" class="btn btn-danger"><i class="fa fa-trash"></i></a></td>
             </tr>
             </tbody>
         </table>

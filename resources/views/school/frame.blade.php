@@ -61,7 +61,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
             Profile <span class="float-right text-muted text-sm"><i class="fas fa-user"></i></span>
           </a>
           <div class="dropdown-divider"></div>
-          <a href="#" class="dropdown-item">
+          <a href="{{route('login')}}" class="dropdown-item">
             Signout <span class="float-right text-muted text-sm"> <i class="fa-solid fa-right-from-bracket"></i></span>
           </a>
         </div>
@@ -100,7 +100,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="{{route('teacherdetails')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Details</p>
                 </a>
