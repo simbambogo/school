@@ -62,7 +62,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           </a>
           <div class="dropdown-divider"></div>
           <a href="{{route('login')}}" class="dropdown-item">
-            Signout <span class="float-right text-muted text-sm"> <i class="fa-solid fa-right-from-bracket"></i></span>
+            Signout <span class="float-right text-muted text-sm"> <i class="fas fa-power"></i></span>
           </a>
         </div>
       </li>
@@ -239,6 +239,14 @@ scratch. This page gets rid of all links and provides the needed markup only.
       "responsive": true,
     });
   });
+</script>
+<script>
+    // Close the flash message when the close button is clicked
+    document.addEventListener('DOMContentLoaded', function () {
+        document.querySelector('.alert').addEventListener('click', function () {
+            this.style.display = 'none';
+        });
+    });
 </script>
 </body>
 </html>

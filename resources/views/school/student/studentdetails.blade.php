@@ -13,29 +13,39 @@
             </ol>
         </div>
         <!-- /.card-header -->
+        @if(session('success'))
+        <div class="alert alert-success">
+        {{ session('success') }}
+        </div>
+        <script>
+            // Automatically close the alert after 3 seconds (3000 milliseconds)
+            setTimeout(function() {
+                $('.alert').slideUp();
+            }, 3000);
+        </script>
+        @endif 
+        @php($na=1)
         <div class="card-body">
         <table id="example2" class="table table-bordered table-hover">
             <thead>
             <tr>
-            <th>Rendering engine</th>
-            <th>Browser</th>
-            <th>Platform(s)</th>
-            <th>Engine version</th>
-            <th>CSS grade</th>
+            <th>N/A</th>
+            <th>Full Name</th>
+            <th>Tel No</th>
+            <th>Email</th>
             <th>Action</th>
             </tr>
             </thead>
             <tbody>
-            <tr>
-            <td>Trident</td>
-            <td>Internet
-                Explorer 4.0
-            </td>
-            <td>Win 95+</td>
-            <td> 4</td>
-            <td>X</td>
-            <td><a href="#" class="btn btn-success"><i class="fa fa-edit"></i></a><a href="#" class="btn btn-danger"><i class="fa fa-trash"></i></a></td>
-            </tr>
+            @foreach($data as $student)
+                <tr>
+                <td>{{$na++}}</td>
+                <td>{{$student -> fullname}}</td>
+                <td>{{$student -> tel}}</td>
+                <td>{{$student -> email}}</td>
+                <td><a href="#" class="btn btn-success"><i class="fa fa-edit"></i></a><a href="#" class="btn btn-danger"><i class="fa fa-trash"></i></a></td>
+                </tr>
+            @endforeach
             </tbody>
         </table>
         </div>
